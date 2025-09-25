@@ -3,30 +3,26 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background: #f2f2f2;
-/* Общие стили для кнопок и текста */
-body, button, p, h1, h2, h3, h4, h5, h6, span, div {
-  color: #000;         
-  -webkit-text-fill-color: #000; /* для iOS Safari */
+  color: #000; /* основной цвет текста */
 }
 
+/* === Стили кнопок, чтобы на iPhone не были синими === */
 button {
-  color: #000 !important;                  /* основной цвет */
-  background-color: #fff;                  /* на всякий случай */
+  color: #000 !important;                  /* цвет текста */
   -webkit-text-fill-color: #000 !important; /* для iOS Safari */
-  -webkit-appearance: none;                /* отключает системные стили кнопки */
-  border: none;                            /* если нужно убрать рамку */
+  background-color: #fff;                  /* фон кнопки */
+  -webkit-appearance: none;                /* отключает системный стиль кнопки */
+  border: none;
   padding: 6px 12px;
   font-size: 16px;
   cursor: pointer;
 }
 
-/* На всякий случай для span внутри кнопки */
+/* Для span внутри кнопки, если есть */
 button span {
   color: #000 !important;
   -webkit-text-fill-color: #000 !important;
 }
-}
-
 .container {
   padding: 20px;
 }
