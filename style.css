@@ -154,14 +154,31 @@ img {
     padding: 10px;
   }
 
+/* Модальные окна контактов */
   .modal-content {
-    max-width: 55%;
+    width: 85%;
+    max-width: 400px;
     margin: 10% auto;
+    font-size: 14px;
+  }
+
+  /* Модальное окно атласа */
+  .modal-content.atlas {
+    width: 90%;
+    max-width: 400px;
+    max-height: 70vh;
+    padding: 10px;
+  }
+
+  #atlasImage {
+    max-width: 100%;
+    max-height: 60vh;
+    height: auto;
   }
 
   .atlas-nav {
     font-size: 20px;
-    padding: 8px;
+    padding: 6px 8px;
   }
 }
 
