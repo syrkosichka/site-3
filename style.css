@@ -196,19 +196,3 @@ img {
     max-width: 1200px;
   }
 }
-
-/* Отключаем перекраску ссылок на iOS */
-a, a:link, a:visited, a:hover, a:active {
-  color: inherit;
-  text-decoration: none;
-}
-
-html {
-  -webkit-text-size-adjust: 100%; /* запрет авто-увеличения текста */
-}
-
-body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: text;
-  -webkit-tap-highlight-color: transparent;
-}
