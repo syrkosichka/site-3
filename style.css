@@ -134,8 +134,8 @@ img {
   }
 
   .scenarios button {
-    font-size: 13px;
-    padding: 6px 10px;
+    font-size: 12px;
+    padding: 6px 8px;
     max-width: 23%;
   }
 
@@ -155,7 +155,7 @@ img {
   }
 
   .modal-content {
-    max-width: 95%;
+    max-width: 85%;
     margin: 10% auto;
   }
 
