@@ -134,7 +134,7 @@ img {
   }
 
   .scenarios button {
-    font-size: 5px;
+    font-size: 10px;
     padding: 6px 8px;
     max-width: 23%;
   }
@@ -163,22 +163,26 @@ img {
   }
 
   /* Модальное окно атласа */
-  .modal-content.atlas {
-    width: 90%;
-    max-width: 400px;
-    max-height: 70vh;
-    padding: 10px;
-  }
+.modal-content.atlas {
+  width: 90%;
+  max-width: 400px;      /* ограничение ширины окна */
+  max-height: 70vh;      /* ограничение высоты окна */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;   /* оставляем стрелки слева/справа */
+  overflow: hidden;      /* предотвращаем выход за границы */
+}
 
-  #atlasImage {
-    max-width: 100%;
-    max-height: 60vh;
-    height: auto;
-  }
+#atlasImage {
+  max-width: 80%;        /* чтобы картинка не съезжала */
+  max-height: 60vh;      /* ограничение по высоте */
+  height: auto;
+}
 
-  .atlas-nav {
-    font-size: 20px;
-    padding: 6px 8px;
+.atlas-nav {
+  flex-shrink: 0;        /* стрелки не сжимаются */
   }
 }
 
